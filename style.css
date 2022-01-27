@@ -1,0 +1,73 @@
+body{
+   font-family: Arial;
+}
+
+/* Platziere Überschrift mittig*/
+h1{
+   text-align: center;
+}
+
+/* Liste bilder mit gleichmäßigen abstand zu einander */
+.gallerie {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+   gap: 1.5em;
+}
+
+/* Formular zentrieren */
+.upload-wrapper{
+   margin-top: 3em;
+   display: flex;
+   justify-content: center;
+}
+
+/* File input ausblenden */
+#upload-form > input[type=file]{
+   display: none;
+}
+
+/* Abstand zu oberen feldern setzen */
+#upload-form > input[type=submit]{
+   margin-top: 0.3em;
+}
+
+/* scaliere das bild runter, wenn es zu groß ist */
+.bild-wrapper{
+   max-width: 90%;
+   background-color: lightgray;
+   border: lightblue solid 4px;
+   padding: 1em;
+}
+
+/* scaliere das bild um in den wrapper zu passen */
+.bild-wrapper > img{
+   display: inline-block;
+   width: 100%;
+}
+
+/* Wrapper als container für die flexbox */
+.likes-outer-wrapper{
+   display: inline-block;
+   margin-left: 1.5em;
+}
+
+/* Innere flexbox um die likezahl mit dem Herzen zu zentrieren */
+.likes-inner-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.herz{
+   user-select: none;
+   cursor: pointer;
+   color: hotpink;
+   font-size: 1.5em;
+}
+
+.likes{
+   margin-left: 0.2em;
+   font-size: 1.2em;
+}

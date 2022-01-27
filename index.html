@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Delaygram</title>
+   <!-- Einbinden  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Überschrift -->
+   <h1>Delaygram</h1>
+
+   <!-- Gallerie -->
+   <div class="gallerie">
+      <!-- Wird automatisch gefüllt -->
+   </div>
+
+   <!-- Upload bereich -->
+   <div class="upload-wrapper">
+      <!-- Formular zum auswählen und Hochladen von Bildern -->
+      <form id="upload-form" onsubmit="return false;" method="post">
+
+         <!-- Eingabefeld für Bildbeschriftung -->
+         <input type="text" name="title" value="" placeholder="Bildbeschriftung" required>
+
+         <!-- Eingabe für bild datei: Versteckt weil sie hässlich aussieht und nicht gut gestyled werden kann -->
+         <input type="file" name="bild" required>
+
+         <!-- Sytlebarer Ersatztknopf für die Dateiauswahl -->
+         <input type="button" name="select-pic" value="Bild auswählen" onclick="document.querySelector('input[type=file]').click()">
+
+         <!-- Stylebarer span zum anzeigen des Dateinamens -->
+         <span id="datei-name"></span>
+
+         <!-- Knopf zum abschicken des Formulars -->
+         <br>
+         <input type="submit" name="submit" value="Hochladen">
+
+         <!--Verteckter Input zum indentifizieren des Formulars -->
+         <input type="text" name="form" value="upload" hidden>
+
+      </form>
+
+   </div>
+
+</body>
+<script src="script.js" charset="utf-8"></script>
+</html>
