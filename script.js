@@ -54,8 +54,8 @@ document.querySelector('#upload-form').addEventListener('submit', (e) => {
 
 
 function loadPictures(pictures) {
-   //Bild endung extrahieren. split teilt den namen bei punk auf, pop gibt das letzte element zurück
    for(let i = 0; i < pictures.length; i++){
+      //Bild endung extrahieren. split teilt den namen bei punk auf, pop gibt das letzte element zurück
       const ext = pictures[i]['name'].split('.').pop();
       const template = `
       <div class="bild-wrapper">

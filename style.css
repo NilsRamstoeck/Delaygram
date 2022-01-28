@@ -35,7 +35,7 @@ h1{
 
 /* scaliere das bild runter, wenn es zu groß ist */
 .bild-wrapper{
-   max-width: 90%;
+   max-width: min(300px, 90%);
    background-color: lightgray;
    border: lightblue solid 4px;
    padding: 1em;
