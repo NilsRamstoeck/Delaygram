@@ -1,0 +1,17 @@
+body{
+   text-align: center;
+   font-size: 2rem;
+   font-family: arial;
+}
+
+form{
+   text-align: left;
+   width: max-content;
+   margin: auto;
+}
+
+.formdata{
+   text-align: left;
+   width: max-content;
+   margin: auto;
+}

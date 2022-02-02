@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="./style.css">
+   <title>Events</title>
+</head>
+<body>
+   <h1>Events in Javascript</h1>
+
+   <!-- Mit Event attributen kann man Javascript direkt im Element schreiben -->
+   <button type="button" name="btn1" onclick="this.innerHTML='Ouch!'">Drück mich!</button>
+
+   <!-- Für größere Funktionen kann auch ein Funktionsaufruf benutzt werden -->
+   <button type="button" name="btn2" onclick="btn2Pressed(this)">Drück mich!</button>
+
+   <!-- Das geht aber alles auch rein mit Javascript-->
+   <button type="button" name="btn3">Drück mich!</button>
+   <button type="button" name="btn4">Drück mich!</button>
+
+</body>
+<script src="./script.js" charset="utf-8"></script>
+</html>
