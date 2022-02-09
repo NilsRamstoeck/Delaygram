@@ -1,0 +1,27 @@
+body{
+   text-align: center;
+   font-size: 1.7rem;
+   font-family: arial;
+}
+
+button{
+   font-size: 2em;
+   display: block;
+   margin: 20px auto 20px auto;
+}
+
+.hideable{
+   width: max-content;
+   padding: 50px;
+   border: 2px solid black;
+   margin: auto;
+}
+
+.hidden {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.fade{
+   transition: all ease 0.5s;
+}

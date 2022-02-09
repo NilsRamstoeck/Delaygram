@@ -1,0 +1,115 @@
+html{
+   height: 100%;
+}
+
+body{
+   text-align: center;
+   font-size: 2rem;
+   font-family: arial;
+}
+
+.container{
+   /* Box die als beispiel dient*/
+   margin: auto;
+   width: 70%;
+   border: 1px solid black;
+   overflow: hidden;
+   height: 70vh;
+}
+
+.navbar {
+   /* Farben setzen*/
+   --color-background: #fff;
+   --color-foreground: #343434;
+   --color-text: var(--color-background);
+
+   /* Navbar positionieren*/
+   position: relative;
+   right: 0px;
+   top: 0px;
+}
+.navbar .hamburger {
+   /* Positionieren*/
+   position: absolute;
+   right: 20px;
+   top: 20px;
+
+   /* Über der Navbar anzeigen */
+   z-index: 1;
+
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+/* Hamburger aus spans zeichnen */
+
+.navbar .hamburger span {
+   position: relative;
+   display: block;
+   background: var(--color-foreground);
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   border-radius: 3px;
+   transform-origin: 0% 0%;
+   transition: 0.5s;
+   opacity: 1;
+}
+
+.navbar.navbar-active .hamburger span{
+   background: var(--color-background);
+}
+
+/* Spans zum 'X' animieren */
+
+.navbar.navbar-active .hamburger span:first-child {
+   transform:translate(0px, -5px) rotate(45deg) ;
+}
+.navbar.navbar-active .hamburger span:nth-child(2) {
+   opacity: 0;
+   transform: scale(0.2, 0.2);
+   transform-origin: 50% 50%;
+}
+.navbar.navbar-active .hamburger span:last-child {
+   transform:translate(-2px, 0px) rotate(-45deg);
+}
+
+
+.menu{
+   /* Menü positionieren */
+   position: absolute;
+   display: inline-block;
+   background: var(--color-foreground);
+   top: 0;
+   width: 20rem;
+   /* Menü ist standardmäßig nicht zu sehen */
+   transform: translate(125%);
+   /* Slide animation */
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/* Menü anzeigen wenn navbar aktiv ist */
+.navbar.navbar-active .menu{
+   transform: translate(35%);
+}
+
+/* Links stylen */
+.links{
+   margin-top: 3em;
+}
+
+.links *{
+   margin-bottom: 20px;
+   list-style: none;
+   text-align: left;
+}
+
+.links li *{
+   color: var(--color-text);
+   text-decoration: none;
+}
+
+.links li *:hover{
+   cursor: pointer;
+   color: red;
+}

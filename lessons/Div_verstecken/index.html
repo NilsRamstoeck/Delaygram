@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="./style.css">
+   <title>Div verstecken</title>
+</head>
+<body>
+   <h1>Div verstecken</h1>
+
+   <button type="button" name="simpleHideButton" onclick="hideToggle('#simple')">Einfach Verstecktes Div</button>
+
+   <div class="hideable hidden" id="simple">
+      <span>Hallo, hier bin ich!</span>
+   </div>
+
+   <button type="button" name="simpleHideButton" onclick="hideToggle('#fancy')">Fade Verstecktes Div</button>
+
+   <div class="hideable fade hidden" id="fancy">
+      <span>So sieht es viel besser aus!</span>
+   </div>
+
+</body>
+<script src="./script.js" charset="utf-8"></script>
+</html>
